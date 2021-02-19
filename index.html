@@ -18,16 +18,28 @@
       <form action="">
         <input type="Number" name="adults" id="adults" placeholder="Adultos" />
         <input type="Number" name="kids" id="kids" placeholder="Crianças" />
-      </form>
+        <input type="Number" name='duration' id='duration' placeholder ='Duração em horas'>
+    </form>
       <div id="kind_of">
-        <button id="meat" type="button"></button>
-        <button id="chicken" type="button"></button>
-        <button id="beer" type="button"></button>
-        <button id="juice" type="button"></button>
-        <button id="salad" type="button"></button>
+        <button id="meat" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
+            <img src="./assets/images/meat.png" alt="Carne">
+        </button>
+        <button id="chicken" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
+            <img src="./assets/images/chicken.png" alt="Frango">
+        </button>
+        <button id="beer" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
+            <img src="./assets/images/beer.png" alt="">
+        </button>
+        <button id="juice" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
+            <img src="./assets/images/juice.png" alt="">
+        </button>
+        <button id="salad" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
+            <img src="./assets/images/salad.png" alt="">
+        </button>
       </div>
       <p>Descubra agora do que precisa para começar churrascar!</p>
-      <button id='results' type='button'>ENVIAR</button>
+      <button id='results' type='button'>CALCULAR</button>
     </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

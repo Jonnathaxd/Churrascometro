@@ -1,0 +1,55 @@
+@media  screen and (max-width: 650px){
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        height: 100vh;
+ 
+    }
+    #container {
+        width: initial;
+        padding: 1.5rem;
+    }
+    #container #kind_of button {
+        width: initial; 
+        height: initial; 
+        border-radius: 1.5rem;
+    }
+
+    #kind_of img {
+        width: initial;
+        height: 3.5rem;
+    }
+    #container h1 {
+        color: white;
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 281px){
+    body {
+        height: 100vh;
+    }
+    #kind_of img {
+        width: initial;
+        height: 3rem;
+    }
+    #container input {
+        width: initial;
+        height: initial;
+        font-size: 1rem; 
+    }
+    #container p ~ button {
+        border-radius: 0.3rem;
+        width: 90%;
+        height: 3.2rem; 
+        font-size: 1.1rem;
+
+}
+#container h1 {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+}
+
+}

@@ -14,31 +14,84 @@
   </head>
   <body>
     <div id="container">
-      <h1>CHURRASCÔMETRO :)</h1>
-      <form action="">
-        <input type="Number" name="adults" id="adults" placeholder="Adultos" />
-        <input type="Number" name="kids" id="kids" placeholder="Crianças" />
-        <input type="Number" name='duration' id='duration' placeholder ='Duração em horas'>
-    </form>
-      <div id="kind_of">
-        <button id="meat" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
-            <img src="./assets/images/meat.png" alt="Carne">
-        </button>
-        <button id="chicken" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
-            <img src="./assets/images/chicken.png" alt="Frango">
-        </button>
-        <button id="beer" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
-            <img src="./assets/images/beer.png" alt="">
-        </button>
-        <button id="juice" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
-            <img src="./assets/images/juice.png" alt="">
-        </button>
-        <button id="salad" type="button" class='kind_button' onclick="active_button(this)" data-confirm='false'>
-            <img src="./assets/images/salad.png" alt="">
-        </button>
+      <div id="base">
+        <h1>CHURRASCÔMETRO :)</h1>
+        <form action="">
+          <input
+            type="Number"
+            name="adults"
+            id="adults"
+            placeholder="Adultos"
+          />
+          <input type="Number" name="kids" id="kids" placeholder="Crianças" />
+          <input
+            type="Number"
+            name="duration"
+            id="duration"
+            placeholder="Duração em horas"
+          />
+        </form>
+        <div id="kind_of">
+          <button
+            id="meat"
+            type="button"
+            class="kind_button"
+            onclick="active_button(this)"
+            data-confirm="false"
+          >
+            <img src="./assets/images/meat.png" alt="Carne" />
+          </button>
+          <button
+            id="chicken"
+            type="button"
+            class="kind_button"
+            onclick="active_button(this)"
+            data-confirm="false"
+          >
+            <img src="./assets/images/chicken.png" alt="Frango" />
+          </button>
+          <button
+            id="beer"
+            type="button"
+            class="kind_button"
+            onclick="active_button(this)"
+            data-confirm="false"
+          >
+            <img src="./assets/images/beer.png" alt="" />
+          </button>
+          <button
+            id="juice"
+            type="button"
+            class="kind_button"
+            onclick="active_button(this)"
+            data-confirm="false"
+          >
+            <img src="./assets/images/juice.png" alt="" />
+          </button>
+          <button
+            id="salad"
+            type="button"
+            class="kind_button"
+            onclick="active_button(this)"
+            data-confirm="false"
+          >
+            <img src="./assets/images/salad.png" alt="" />
+          </button>
+        </div>
+        <p>Descubra agora do que precisa para começar churrascar!</p>
+        <button type="button" onclick="results()">CALCULAR</button>
       </div>
-      <p>Descubra agora do que precisa para começar churrascar!</p>
-      <button id='results' type='button'>CALCULAR</button>
+      <div id="results">
+        <h1>Resultados para churrascar :)</h1>
+        <div id="meat_results"></div>
+        <div id="chicken_results"></div>
+        <div id="beer_results"></div>
+        <div id="juice_results"></div>
+        <div id="salad_results"></div>
+        
+        <button onclick='start_again()'>Criar um novo :D</button>
+        <button onclick='start_print()'>Imprimir :)</button>
+      </div>
     </div>
     <script src="./scripts/script.js"></script>
   </body>

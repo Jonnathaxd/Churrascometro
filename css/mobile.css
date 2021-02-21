@@ -3,12 +3,24 @@
         box-sizing: border-box;
     }
     body {
-        height: 100vh;
+        height: 120vh;
  
     }
     #container {
         width: initial;
         padding: 1.5rem;
+    }
+    #meat_results, #chicken_results, #beer_results, #juice_results, #salad_results {
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position: right center;
+    }
+    #results .confirm_results {
+        padding: 1rem 3.3rem 1rem 1rem;
+        display: flex;
+        font-size: 1.1rem;
+        text-align: left;
+
     }
     #container #kind_of button {
         width: initial; 
@@ -50,6 +62,21 @@
 #container h1 {
     font-size: 1.3rem;
     padding: 0.2rem;
+}
+body {
+    height: 120vh;
+}
+#meat_results, #chicken_results, #beer_results, #juice_results, #salad_results {
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: right center;
+}
+#results .confirm_results {
+    padding: 1rem 3.3rem 1rem 1rem;
+    display: flex;
+    font-size: 0.9rem;
+    text-align: left;
+
 }
 
 }
